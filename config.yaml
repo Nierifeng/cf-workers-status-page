@@ -39,7 +39,7 @@ monitors:
     expectStatus: 200
 
   - id: 任益也.我爱你
-    name: https://www.xn--ujqro723h.xn--6qq986b3xl/
+    name: 记录与小也的网站
     description: "小也"
     url: "https://www.xn--ujqro723h.xn--6qq986b3xl/"
     method: GET
