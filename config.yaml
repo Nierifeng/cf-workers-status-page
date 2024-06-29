@@ -34,7 +34,7 @@ monitors:
   - id: qexo.lifesugar.top
     name: http://qexo.lifesugar.top/
     description: "博客编辑"
-    url: "http://qexo.lifesugar.top/"
+    url: "https://qexo.lifesugar.top/login/?next=/"
     method: GET
     expectStatus: 200
 
