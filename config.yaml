@@ -1,32 +1,39 @@
 settings:
-  title: 'Status Page'
-  url: 'https://status-page.eidam.dev' # used for Slack messages
+  title: "Status Page"
+  url: "https://status-page.eidam.dev" # used for Slack messages
   logo: logo-192x192.png # image in ./public/ folder
   daysInHistogram: 90 # number of days you want to display in histogram
   collectResponseTimes: true # collects avg response times from CRON locations
 
-  allmonitorsOperational: 'All Systems Operational'
-  notAllmonitorsOperational: 'Not All Systems Operational'
-  monitorLabelOperational: 'Operational'
-  monitorLabelNotOperational: 'Not Operational'
-  monitorLabelNoData: 'No data'
-  dayInHistogramNoData: 'No data'
-  dayInHistogramOperational: 'All good'
-  dayInHistogramNotOperational: ' incident(s)' # xx incident(s) recorded
+  allmonitorsOperational: "All Systems Operational"
+  notAllmonitorsOperational: "Not All Systems Operational"
+  monitorLabelOperational: "Operational"
+  monitorLabelNotOperational: "Not Operational"
+  monitorLabelNoData: "No data"
+  dayInHistogramNoData: "No data"
+  dayInHistogramOperational: "All good"
+  dayInHistogramNotOperational: " incident(s)" # xx incident(s) recorded
 
 monitors:
   - id: www.lifesugar.com
     name: www.lifesugar.com
-    description: '博客'
-    url: 'https://www.lifesugar.com'
+    description: "博客"
+    url: "https://www.lifesugar.com"
     method: GET
     followRedirect: false # should fetch follow redirects, default=false
     expectStatus: 200
-    linkable: true 
+    linkable: true
 
   - id: img.lifesugar.com
     name: img.lifesugar.com
-    description: '图床'
-    url: 'https://img.lifesugar.com/'
+    description: "图床"
+    url: "https://img.lifesugar.com/"
+    method: GET
+    expectStatus: 200
+
+  - id: qexo.lifesugar.com
+    name: http://qexo.lifesugar.top/
+    description: "博客编辑"
+    url: "http://qexo.lifesugar.top/"
     method: GET
     expectStatus: 200
