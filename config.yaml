@@ -15,25 +15,32 @@ settings:
   dayInHistogramNotOperational: " incident(s)" # xx incident(s) recorded
 
 monitors:
-  - id: www.lifesugar.com
-    name: www.lifesugar.com
+  - id: www.lifesugar.top
+    name: www.lifesugar.top
     description: "博客"
-    url: "https://www.lifesugar.com"
+    url: "https://www.lifesugar.top"
     method: GET
     followRedirect: false # should fetch follow redirects, default=false
     expectStatus: 200
     linkable: true
 
-  - id: img.lifesugar.com
-    name: img.lifesugar.com
+  - id: img.lifesugar.top
+    name: img.lifesugar.top
     description: "图床"
-    url: "https://img.lifesugar.com/"
+    url: "https://img.lifesugar.top/"
     method: GET
     expectStatus: 200
 
-  - id: qexo.lifesugar.com
+  - id: qexo.lifesugar.top
     name: http://qexo.lifesugar.top/
     description: "博客编辑"
     url: "http://qexo.lifesugar.top/"
+    method: GET
+    expectStatus: 200
+
+  - id: 任益也.我爱你
+    name: https://www.xn--ujqro723h.xn--6qq986b3xl/
+    description: "小也"
+    url: "https://www.xn--ujqro723h.xn--6qq986b3xl/"
     method: GET
     expectStatus: 200
